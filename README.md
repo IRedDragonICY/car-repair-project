@@ -1,24 +1,40 @@
 
-<!-- membuat tulisan di tengah -->
-<!-- # Car Repair Project -->
+<!-- https://github.com/IRedDragonICY/car-repair-project -->
+<p align="center">
+  <img src="src/icon.png" width="200" height="200" />
+</p>
 <center><h1>Car Repair Project</h1></center>
+
+___
+<center>
+
+[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://www.cplusplus.com/)[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+<!-- <!-- badge kotak besarnya sama collab -->
+<!-- badge total bintang -->
+![GitHub Repo stars](https://img.shields.io/github/stars/IRedDragonICY/car-repair-project?style=social)![Struktur Data](https://img.shields.io/badge/Struktur%20Data-2023-blue)![GitHub repo size](https://img.shields.io/github/repo-size/IRedDragonICY/car-repair-project)
+<!-- visitor -->
+![visitors](https://visitor-badge.laobi.icu/badge?page_id=IRedDragonICY.car-repair-project)
+
+</center>
+
 
 This project is a collaboration between various teams with the following features:
 
-- **Team 1**: Vehicle Return Feature
-- **Team 2**: Payment
-- **Team 3**: Money Earnings Report
-- **Team 4**: Car Description and Type
-- **Team 5**: Help Center and Support
-- **Team 6**: Management of Discounts and Promotions
-- **Team 7**: Damage Report Feature
-- **Team 8**: Reviews and Ratings
-- **Team 9**: Driver Identity
-- **Team 10**: Booking Feature
-- **Team 11**: Additional Driver Option
-- **Team 12**: Car Type Search
-- **Team 13**: Rental Branch Option
-
+| Team | Feature |
+|------|---------|
+| 1    | Vehicle Return Feature |
+| 2    | Payment |
+| 3    | Money Earnings Report |
+| 4    | Car Description and Type |
+| 5    | Help Center and Support |
+| 6    | Management of Discounts and Promotions |
+| 7    | Damage Report Feature |
+| 8    | Reviews and Ratings |
+| 9    | Driver Identity |
+| 10   | Booking Feature |
+| 11   | Additional Driver Option |
+| 12   | Car Type Search |
+| 13   | Rental Branch Option |
 
 ## Development Team
 
