@@ -11,9 +11,7 @@ ___
 [![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://www.cplusplus.com/)[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
 <!-- <!-- badge kotak besarnya sama collab -->
 <!-- badge total bintang -->
-![GitHub Repo stars](https://img.shields.io/github/stars/IRedDragonICY/car-repair-project?style=social)![Struktur Data](https://img.shields.io/badge/Struktur%20Data-2023-blue)![GitHub repo size](https://img.shields.io/github/repo-size/IRedDragonICY/car-repair-project)
-<!-- visitor -->
-![visitors](https://visitor-badge.laobi.icu/badge?page_id=IRedDragonICY.car-repair-project)
+![GitHub Repo stars](https://img.shields.io/github/stars/IRedDragonICY/car-repair-project?style=social)![Struktur Data](https://img.shields.io/badge/Struktur%20Data-2023-blue)![GitHub repo size](https://img.shields.io/github/repo-size/IRedDragonICY/car-repair-project)![visitors](https://visitor-badge.laobi.icu/badge?page_id=IRedDragonICY.car-repair-project)
 
 </center>
 
@@ -86,3 +84,5 @@ This project is a collaboration between various teams with the following feature
 - 2200018368	ALIFIAN DAMAR ZAKIANSAH
 - 2200018357	NAUFAL ZAFRANY SYAMSUDIN
 - 2100018233	M. ISALDI
+
+**University**: Universitas Ahmad Dahlan, Copyright 2024
