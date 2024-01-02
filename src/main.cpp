@@ -8,6 +8,7 @@
 #include "lib/team 7/laporanKerusakan.hpp"
 #include "lib/team 8/ulasan.hpp"
 #include "lib/team 9/identitasSupir.hpp"
+#include "lib/team 10/booking.hpp"
 
 #include <map>
 
@@ -16,14 +17,15 @@ void menu(userAuthentication& auth) {
         string pilih;
         cout << "Halo, " << auth.userTampil << "!" << endl;
         cout << "Menu" << endl;
-        cout << "1. deskripsi mobil" << endl;
-        cout << "2. laporan keuangan" << endl;
-        cout << "3. laporan kerusakan" << endl;
-        cout << "4. pengembalian mobil" << endl;
-        cout << "5. voucher" << endl;
-        cout << "6. pembayaran" << endl;
-        cout << "7. ulasan" << endl;
-        cout << "8. identitas supir" << endl;
+        cout << "1. booking" << endl;
+        cout << "2. deskripsi mobil" << endl;
+        cout << "3. laporan keuangan" << endl;
+        cout << "4. laporan kerusakan" << endl;
+        cout << "5. pengembalian mobil" << endl;
+        cout << "6. voucher" << endl;
+        cout << "7. pembayaran" << endl;
+        cout << "8. ulasan" << endl;
+        cout << "9. identitas supir" << endl;
         cout << "0. Logout" << endl;
         cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
         cout << "Pilih menu: ";
@@ -31,14 +33,15 @@ void menu(userAuthentication& auth) {
 
         std::map<string, std::function<void()>> cases {
             {"0", [&]() { auth.logout(); }},
-            {"1", [&]() { menuDeskripsiMobil(); }},
-            {"2", [&]() { menuLaporanKeuangan(); }},
-            {"3", [&]() { menuLaporanKerusakan(); }},
-            {"4", [&]() { menuPengembalian(); }},
-            {"5", [&]() { menuVoucher(); }},
-            {"6", [&]() { menuPembayaran(); }},
-            {"7", [&]() { menuUlasan(); }},
-            {"8", [&]() { menuIdentitasSupir(); }},
+            {"1", [&]() { menuBooking(); }},
+            {"2", [&]() { menuDeskripsiMobil(); }},
+            {"3", [&]() { menuLaporanKeuangan(); }},
+            {"4", [&]() { menuLaporanKerusakan(); }},
+            {"5", [&]() { menuPengembalian(); }},
+            {"6", [&]() { menuVoucher(); }},
+            {"7", [&]() { menuPembayaran(); }},
+            {"8", [&]() { menuUlasan(); }},
+            {"9", [&]() { menuIdentitasSupir(); }},
             {"/?", [&]() { menuFAQ(); }}
         };
 
