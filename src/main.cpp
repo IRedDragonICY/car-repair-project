@@ -11,7 +11,7 @@
 #include "lib/team 10/booking.hpp"
 #include "lib/team 11/pilihSupir.hpp"
 #include "lib/team 12/cariTipeMobil.hpp"
-
+#include "lib/team 13/opsiCabangSewa.hpp"
 #include <map>
 
 void menu(userAuthentication& auth) {
@@ -20,16 +20,17 @@ void menu(userAuthentication& auth) {
         cout << "Halo, " << auth.userTampil << "!" << endl;
         cout << "Menu" << endl;
         cout << "1. booking" << endl;
-        cout << "2. pilih supir" << endl;
-        cout << "3. deskripsi mobil" << endl;
-        cout << "4. cari tipe mobil" << endl;
-        cout << "4. laporan keuangan" << endl;
-        cout << "5. laporan kerusakan" << endl;
-        cout << "6. pengembalian mobil" << endl;
-        cout << "7. voucher" << endl;
-        cout << "8. pembayaran" << endl;
-        cout << "9. ulasan" << endl;
-        cout << "10. identitas supir" << endl;
+        cout << "2. cabang sewa" << endl;
+        cout << "3. pilih supir" << endl;
+        cout << "4. deskripsi mobil" << endl;
+        cout << "5. cari tipe mobil" << endl;
+        cout << "6. laporan keuangan" << endl;
+        cout << "7. laporan kerusakan" << endl;
+        cout << "8. pengembalian mobil" << endl;
+        cout << "9. voucher" << endl;
+        cout << "10. pembayaran" << endl;
+        cout << "11. ulasan" << endl;
+        cout << "12. identitas supir" << endl;
         cout << "0. Logout" << endl;
         cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
         cout << "Pilih menu: ";
@@ -38,16 +39,17 @@ void menu(userAuthentication& auth) {
         std::map<string, std::function<void()>> cases {
             {"0", [&]() { auth.logout(); }},
             {"1", [&]() { menuBooking(); }},
-            {"2", [&]() { menuPilihSupir(); }},
-            {"3", [&]() { menuDeskripsiMobil(); }},
-            {"4", [&]() { menuCariTipeMobil(); }},
-            {"5", [&]() { menuLaporanKeuangan(); }},
-            {"6", [&]() { menuLaporanKerusakan(); }},
-            {"7", [&]() { menuPengembalian(); }},
-            {"8", [&]() { menuVoucher(); }},
-            {"9", [&]() { menuPembayaran(); }},
-            {"10", [&]() { menuUlasan(); }},
-            {"11", [&]() { menuIdentitasSupir(); }},
+            {"2", [&]() { menuOpsiCabangSewa(); }},
+            {"3", [&]() { menuPilihSupir(); }},
+            {"4", [&]() { menuDeskripsiMobil(); }},
+            {"5", [&]() { menuCariTipeMobil(); }},
+            {"6", [&]() { menuLaporanKeuangan(); }},
+            {"7", [&]() { menuLaporanKerusakan(); }},
+            {"8", [&]() { menuPengembalian(); }},
+            {"9", [&]() { menuVoucher(); }},
+            {"10", [&]() { menuPembayaran(); }},
+            {"11", [&]() { menuUlasan(); }},
+            {"12", [&]() { menuIdentitasSupir(); }},
             {"/?", [&]() { menuFAQ(); }}
         };
 
