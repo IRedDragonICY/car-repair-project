@@ -7,7 +7,7 @@
 #include "lib/team 6/voucher.hpp"
 #include "lib/team 7/laporanKerusakan.hpp"
 #include "lib/team 8/ulasan.hpp"
-
+#include "lib/team 9/identitasSupir.hpp"
 
 #include <map>
 
@@ -23,6 +23,7 @@ void menu(userAuthentication& auth) {
         cout << "5. voucher" << endl;
         cout << "6. pembayaran" << endl;
         cout << "7. ulasan" << endl;
+        cout << "8. identitas supir" << endl;
         cout << "0. Logout" << endl;
         cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
         cout << "Pilih menu: ";
@@ -37,6 +38,7 @@ void menu(userAuthentication& auth) {
             {"5", [&]() { menuVoucher(); }},
             {"6", [&]() { menuPembayaran(); }},
             {"7", [&]() { menuUlasan(); }},
+            {"8", [&]() { menuIdentitasSupir(); }},
             {"/?", [&]() { menuFAQ(); }}
         };
 
