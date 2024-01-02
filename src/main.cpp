@@ -5,6 +5,9 @@
 #include "lib/team 4/deskripsi.hpp"
 #include "lib/team 5/faq.hpp"
 #include "lib/team 6/voucher.hpp"
+#include "lib/team 7/laporanKerusakan.hpp"
+
+
 #include <map>
 
 void menu(userAuthentication& auth) {
@@ -14,9 +17,10 @@ void menu(userAuthentication& auth) {
         cout << "Menu" << endl;
         cout << "1. deskripsi mobil" << endl;
         cout << "2. laporan keuangan" << endl;
-        cout << "3. pengembalian mobil" << endl;
-        cout << "4. voucher" << endl;
-        cout << "5. pembayaran" << endl;
+        cout << "3. laporan kerusakan" << endl;
+        cout << "4. pengembalian mobil" << endl;
+        cout << "5. voucher" << endl;
+        cout << "6. pembayaran" << endl;
         cout << "0. Logout" << endl;
         cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
         cout << "Pilih menu: ";
@@ -25,10 +29,11 @@ void menu(userAuthentication& auth) {
         std::map<string, std::function<void()>> cases {
             {"0", [&]() { auth.logout(); }},
             {"1", [&]() { menuDeskripsiMobil(); }},
-            {"2", [&]() { menuLaporan(); }},
-            {"3", [&]() { menuPengembalian(); }},
-            {"4", [&]() { menuVoucher(); }},
-            {"5", [&]() { menuPembayaran(); }},
+            {"2", [&]() { menuLaporanKeuangan(); }},
+            {"3", [&]() { menuLaporanKerusakan(); }},
+            {"4", [&]() { menuPengembalian(); }},
+            {"5", [&]() { menuVoucher(); }},
+            {"6", [&]() { menuPembayaran(); }},
             {"/?", [&]() { menuFAQ(); }}
         };
 
