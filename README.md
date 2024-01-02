@@ -1,24 +1,33 @@
-
-<!-- https://github.com/IRedDragonICY/car-repair-project -->
 <p align="center">
   <img src="src/icon.png" width="200" height="200" />
   <h1 align="center">Car Repair Project</h1>
 
 ___
+
 <p align="center">
   <a href="https://www.cplusplus.com/"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"></a>
   <a href="https://www.microsoft.com/windows"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></a>
   <img src="https://img.shields.io/github/stars/IRedDragonICY/car-repair-project?style=social" alt="GitHub Repo stars">
   <img src="https://img.shields.io/badge/Struktur%20Data-2023-blue" alt="Struktur Data">
+  <img src="https://img.shields.io/badge/Slot-Selasa%2009.00-blue" alt="Slot">
   <img src="https://img.shields.io/github/repo-size/IRedDragonICY/car-repair-project" alt="GitHub repo size">
   <img src="https://visitor-badge.laobi.icu/badge?page_id=IRedDragonICY.car-repair-project" alt="visitors">
 </p>
 
-
-
 >CRP is an application project that implements various data structures using C++. This project is a collaboration between multiple teams, each focusing on a specific feature.
 
-# Data Structures
+## Table of Contents
+- [Demo](#demo)
+- [Data Structures](#data-structures)
+- [Features](#features)
+- [Development Team](#development-team)
+
+## Demo
+
+<img src="documentation/demo1.png" alt="demo1" width="500">
+<img src="documentation/demo2.png" alt="demo2" width="500">
+
+## Data Structures
 The project implements several data structures, each of which is used in various aspects of the application. The data structures include:
 
 1. Functions and Recursion
@@ -31,7 +40,7 @@ The project implements several data structures, each of which is used in various
 8. Binary Search Trees
 9. AVL Trees
 
-# Features
+## Features
 
 | Team | Feature |
 |------|---------|
