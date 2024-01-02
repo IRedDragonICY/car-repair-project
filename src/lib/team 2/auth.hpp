@@ -295,10 +295,11 @@ class userAuthentication {
 			}
 		}
 
+
+	public:
 		void logout(){
 			loggedIn = false;
 		}
-	public:
 		userAuthentication() {
 			loggedIn = false; // Saat program dimulai, pengguna belum login.
 		}
@@ -321,8 +322,7 @@ class userAuthentication {
 			cout << "1. Registrasi\n";
 			cout << "2. Login\n";
 			cout << "3. Ganti password\n";
-			cout << "4. Logout\n";
-			cout << "5. Keluar\n";
+			cout << "4. keluar\n";
 
 			for (int i = 1; i <= 20; i++) {
 				cout << "=";
@@ -353,19 +353,13 @@ class userAuthentication {
 					changePassword();
 					break;
 				case 4:
-					if (!loggedIn){
-		                cout << "Anda belum login, silahkan login terlebih dahulu!\n";
-		                break;
-		            }
-					logout();
-					break;
-				case 5:
 					cout << "\nAnda telah keluar dari program." << endl;
 					exit(0);
 				default:
 					cout << "Pilihan tidak valid. Silakan pilih 1, 2, atau 3." << endl;
 			}
 		}
+
 };
 
 

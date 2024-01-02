@@ -4,16 +4,20 @@
 #include "lib/team 3/laporan.hpp"
 #include "lib/team 4/deskripsi.hpp"
 
-void menu() {
+void menu(userAuthentication auth) {
     int pilih;
     cout << "Menu" << endl;
     cout << "1. deskripsi mobil" << endl;
     cout << "2. laporan keuangan" << endl;
     cout << "3. pengembalian mobil" << endl;
     cout << "4. pembayaran" << endl;
+    cout << "0. Logout" << endl;
     cout << "Pilih menu: ";
     cin >> pilih;
     switch (pilih) {
+    case 0:
+        auth.logout();
+        break;
     case 1:
         menuDeskripsiMobil();
         break;
@@ -38,7 +42,7 @@ int main() {
 		auth.handleUser();
 
         if (auth.getLoggedIn()) {
-            menu();
+            menu(auth);
         }
 	}
     return 0;
