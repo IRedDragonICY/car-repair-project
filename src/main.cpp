@@ -4,6 +4,7 @@
 #include "lib/team 3/laporan.hpp"
 #include "lib/team 4/deskripsi.hpp"
 #include "lib/team 5/faq.hpp"
+#include "lib/team 6/voucher.hpp"
 #include <map>
 
 void menu(userAuthentication& auth) {
@@ -14,7 +15,8 @@ void menu(userAuthentication& auth) {
         cout << "1. deskripsi mobil" << endl;
         cout << "2. laporan keuangan" << endl;
         cout << "3. pengembalian mobil" << endl;
-        cout << "4. pembayaran" << endl;
+        cout << "4. voucher" << endl;
+        cout << "5. pembayaran" << endl;
         cout << "0. Logout" << endl;
         cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
         cout << "Pilih menu: ";
@@ -25,7 +27,8 @@ void menu(userAuthentication& auth) {
             {"1", [&]() { menuDeskripsiMobil(); }},
             {"2", [&]() { menuLaporan(); }},
             {"3", [&]() { menuPengembalian(); }},
-            {"4", [&]() { menuPembayaran(); }},
+            {"4", [&]() { menuVoucher(); }},
+            {"5", [&]() { menuPembayaran(); }},
             {"/?", [&]() { menuFAQ(); }}
         };
 
