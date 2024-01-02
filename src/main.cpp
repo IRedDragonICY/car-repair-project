@@ -1,39 +1,25 @@
-#include "lib/team 1/pengembalian.hpp"
-#include "lib/team 2/auth.hpp"
-#include "lib/team 2/pembayaran.hpp"
-#include "lib/team 3/laporan.hpp"
-#include "lib/team 4/deskripsi.hpp"
-#include "lib/team 5/faq.hpp"
-#include "lib/team 6/voucher.hpp"
-#include "lib/team 7/laporanKerusakan.hpp"
-#include "lib/team 8/ulasan.hpp"
-#include "lib/team 9/identitasSupir.hpp"
-#include "lib/team 10/booking.hpp"
-#include "lib/team 11/pilihSupir.hpp"
-#include "lib/team 12/cariTipeMobil.hpp"
-#include "lib/team 13/opsiCabangSewa.hpp"
+#include "lib/features.hpp"
 #include <map>
 
 void menu(userAuthentication& auth) {
     while (true){
         string pilih;
-        cout << "Halo, " << auth.userTampil << "!" << endl;
-        cout << "Menu" << endl;
-        cout << "1. booking" << endl;
-        cout << "2. cabang sewa" << endl;
-        cout << "3. pilih supir" << endl;
-        cout << "4. deskripsi mobil" << endl;
-        cout << "5. cari tipe mobil" << endl;
-        cout << "6. laporan keuangan" << endl;
-        cout << "7. laporan kerusakan" << endl;
-        cout << "8. pengembalian mobil" << endl;
-        cout << "9. voucher" << endl;
-        cout << "10. pembayaran" << endl;
-        cout << "11. ulasan" << endl;
-        cout << "12. identitas supir" << endl;
-        cout << "0. Logout" << endl;
-        cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
-        cout << "Pilih menu: ";
+        int width = 48;
+
+        string welcomeMsg = "Selamat Datang, " + auth.userTampil;
+        
+        int padding = (width - welcomeMsg.length()) / 2;
+        cout << "\033[1;35m" << string(padding, '-') << welcomeMsg << string(padding, '-') << "\033[0m" << endl;
+
+        cout << "\033[1;35m| 1. Booking            | 7. Laporan Kerusakan  |\033[0m" << endl;
+        cout << "\033[1;35m| 2. Cabang Sewa        | 8. Pengembalian Mobil |\033[0m" << endl;
+        cout << "\033[1;35m| 3. Pilih Supir        | 9. Voucher            |\033[0m" << endl;
+        cout << "\033[1;35m| 4. Deskripsi Mobil    | 10. Pembayaran        |\033[0m" << endl;
+        cout << "\033[1;35m| 5. Cari Tipe Mobil    | 11. Ulasan            |\033[0m" << endl;
+        cout << "\033[1;35m| 6. Laporan Keuangan   | 12. Identitas Supir   |\033[0m" << endl;
+        cout << "\033[1;35m| 0. Logout             |                       |\033[0m" << endl;
+        cout << "\033[1;35m-------------------------------------------------\033[0m" << endl;
+        cout << "\033[1;35mMasukkan pilihan Anda: \033[0m";
         cin >> pilih;
 
         std::map<string, std::function<void()>> cases {
@@ -56,7 +42,7 @@ void menu(userAuthentication& auth) {
         if (cases.count(pilih) > 0) {
             cases[pilih]();
         } else {
-            cout << "Pilihan tidak valid." << endl;
+            cout << "\033[44;37mPilihan tidak valid.\033[0m" << endl;
         }
     }
 }
