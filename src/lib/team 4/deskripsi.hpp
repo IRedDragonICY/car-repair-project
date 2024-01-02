@@ -11,6 +11,10 @@
 #define max 5 
 using namespace std;
 
+// variable global
+bool isDoneMenuDeskripsiMobil = false;
+
+
 class Mobil{
 public :
 string merk, jenis, harga;
@@ -508,7 +512,8 @@ a:
         }
         }
          else if (pil == 0){
-          exit(0);
+          isDoneMenuDeskripsiMobil = true;
+          return;
         }
   }
 
@@ -619,6 +624,9 @@ void menuDeskripsiMobil() {
   // x.regis(); Tidak perlu karena sudah ada di main.cpp
   // x.login();
   x.menu(x);
+  if (isDoneMenuDeskripsiMobil) {
+    return;
+  }
   x.tipe();
   x.push();
   x.pop();
@@ -628,6 +636,7 @@ void menuDeskripsiMobil() {
   x.print();
   x.tambahMobil("toyota", "honda", "Rp300.000" ,x);
   x.tambahMobil("suzuki", "daihatsu", "Rp250000" ,x);
+  return;
   // vector<Mobil> mobilList = {
   //     Mobil(1,"Toyota", "Avanza", "Rp300.000"),
   //     Mobil(2, "Suzuki", "Ertiga", "Rp350.000"),

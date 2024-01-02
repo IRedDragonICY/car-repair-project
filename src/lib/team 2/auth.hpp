@@ -308,11 +308,7 @@ class userAuthentication {
 
 			system("cls");
 
-			if (loggedIn) {
-				cout << "Username saat ini: " << userTampil << "\n";
-			} else {
-				cout << "Username saat ini: (belum login)\n";
-			}
+
 			cout << endl;
 			for (int i = 1; i <= 20; i++) {
 				cout << "=";

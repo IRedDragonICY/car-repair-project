@@ -3,43 +3,43 @@
 #include "lib/team 2/pembayaran.hpp"
 #include "lib/team 3/laporan.hpp"
 #include "lib/team 4/deskripsi.hpp"
+#include "lib/team 5/faq.hpp"
+#include <map>
 
-void menu(userAuthentication auth) {
-    int pilih;
-    cout << "Menu" << endl;
-    cout << "1. deskripsi mobil" << endl;
-    cout << "2. laporan keuangan" << endl;
-    cout << "3. pengembalian mobil" << endl;
-    cout << "4. pembayaran" << endl;
-    cout << "0. Logout" << endl;
-    cout << "Pilih menu: ";
-    cin >> pilih;
-    switch (pilih) {
-    case 0:
-        auth.logout();
-        break;
-    case 1:
-        menuDeskripsiMobil();
-        break;
-    case 2:
-        menuLaporan();
-        break;
-    case 3:
-        menuPengembalian();
-        break;
-    case 4:
-        menuPembayaran();
-        break;
-    default:
-        cout << "Pilihan tidak valid." << endl;
-        break;
+void menu(userAuthentication& auth) {
+    while (true){
+        string pilih;
+        cout << "Halo, " << auth.userTampil << "!" << endl;
+        cout << "Menu" << endl;
+        cout << "1. deskripsi mobil" << endl;
+        cout << "2. laporan keuangan" << endl;
+        cout << "3. pengembalian mobil" << endl;
+        cout << "4. pembayaran" << endl;
+        cout << "0. Logout" << endl;
+        cout << "Untuk melakukan F.A.Q, silahkan tulis /?" << endl;
+        cout << "Pilih menu: ";
+        cin >> pilih;
+
+        std::map<string, std::function<void()>> cases {
+            {"0", [&]() { auth.logout(); }},
+            {"1", [&]() { menuDeskripsiMobil(); }},
+            {"2", [&]() { menuLaporan(); }},
+            {"3", [&]() { menuPengembalian(); }},
+            {"4", [&]() { menuPembayaran(); }},
+            {"/?", [&]() { menuFAQ(); }}
+        };
+
+        if (cases.count(pilih) > 0) {
+            cases[pilih]();
+        } else {
+            cout << "Pilihan tidak valid." << endl;
+        }
     }
 }
-
 int main() {
     userAuthentication auth;
 	while (true) {
-		auth.handleUser();
+        auth.handleUser();
 
         if (auth.getLoggedIn()) {
             menu(auth);
