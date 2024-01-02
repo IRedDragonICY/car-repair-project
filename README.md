@@ -2,21 +2,36 @@
 <!-- https://github.com/IRedDragonICY/car-repair-project -->
 <p align="center">
   <img src="src/icon.png" width="200" height="200" />
-</p>
-<center><h1>Car Repair Project</h1></center>
+  <h1 align="center">Car Repair Project</h1>
 
 ___
-<center>
+<p align="center">
+  <a href="https://www.cplusplus.com/"><img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" alt="C++"></a>
+  <a href="https://www.microsoft.com/windows"><img src="https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></a>
+  <img src="https://img.shields.io/github/stars/IRedDragonICY/car-repair-project?style=social" alt="GitHub Repo stars">
+  <img src="https://img.shields.io/badge/Struktur%20Data-2023-blue" alt="Struktur Data">
+  <img src="https://img.shields.io/github/repo-size/IRedDragonICY/car-repair-project" alt="GitHub repo size">
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=IRedDragonICY.car-repair-project" alt="visitors">
+</p>
 
-[![C++](https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)](https://www.cplusplus.com/)[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
-<!-- <!-- badge kotak besarnya sama collab -->
-<!-- badge total bintang -->
-![GitHub Repo stars](https://img.shields.io/github/stars/IRedDragonICY/car-repair-project?style=social)![Struktur Data](https://img.shields.io/badge/Struktur%20Data-2023-blue)![GitHub repo size](https://img.shields.io/github/repo-size/IRedDragonICY/car-repair-project)![visitors](https://visitor-badge.laobi.icu/badge?page_id=IRedDragonICY.car-repair-project)
-
-</center>
 
 
-This project is a collaboration between various teams with the following features:
+>CRP is an application project that implements various data structures using C++. This project is a collaboration between multiple teams, each focusing on a specific feature.
+
+# Data Structures
+The project implements several data structures, each of which is used in various aspects of the application. The data structures include:
+
+1. Functions and Recursion
+2. Static Arrays
+3. Dynamic Arrays
+4. Linked Lists
+5. Doubly-linked Lists or Circular-linked lists
+6. Stacks
+7. Queues
+8. Binary Search Trees
+9. AVL Trees
+
+# Features
 
 | Team | Feature |
 |------|---------|
