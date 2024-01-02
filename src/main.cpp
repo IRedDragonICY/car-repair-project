@@ -10,6 +10,7 @@
 #include "lib/team 9/identitasSupir.hpp"
 #include "lib/team 10/booking.hpp"
 #include "lib/team 11/pilihSupir.hpp"
+#include "lib/team 12/cariTipeMobil.hpp"
 
 #include <map>
 
@@ -21,6 +22,7 @@ void menu(userAuthentication& auth) {
         cout << "1. booking" << endl;
         cout << "2. pilih supir" << endl;
         cout << "3. deskripsi mobil" << endl;
+        cout << "4. cari tipe mobil" << endl;
         cout << "4. laporan keuangan" << endl;
         cout << "5. laporan kerusakan" << endl;
         cout << "6. pengembalian mobil" << endl;
@@ -38,13 +40,14 @@ void menu(userAuthentication& auth) {
             {"1", [&]() { menuBooking(); }},
             {"2", [&]() { menuPilihSupir(); }},
             {"3", [&]() { menuDeskripsiMobil(); }},
-            {"4", [&]() { menuLaporanKeuangan(); }},
-            {"5", [&]() { menuLaporanKerusakan(); }},
-            {"6", [&]() { menuPengembalian(); }},
-            {"7", [&]() { menuVoucher(); }},
-            {"8", [&]() { menuPembayaran(); }},
-            {"9", [&]() { menuUlasan(); }},
-            {"10", [&]() { menuIdentitasSupir(); }},
+            {"4", [&]() { menuCariTipeMobil(); }},
+            {"5", [&]() { menuLaporanKeuangan(); }},
+            {"6", [&]() { menuLaporanKerusakan(); }},
+            {"7", [&]() { menuPengembalian(); }},
+            {"8", [&]() { menuVoucher(); }},
+            {"9", [&]() { menuPembayaran(); }},
+            {"10", [&]() { menuUlasan(); }},
+            {"11", [&]() { menuIdentitasSupir(); }},
             {"/?", [&]() { menuFAQ(); }}
         };
 
